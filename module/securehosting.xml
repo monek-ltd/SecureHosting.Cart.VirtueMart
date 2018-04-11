@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension version="2.5" type="plugin" group="vmpayment">
     <name>SecureHosting</name>
-    <creationDate>June 2013</creationDate>
-    <author>UPG Plc</author>
-    <authorUrl>http://www.upg.co.uk</authorUrl>
+    <creationDate>April 2018</creationDate>
+    <author>Monek Ltd</author>
+    <authorUrl>https://www.monek.com</authorUrl>
     <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
     <version>1.0.0</version>
     <description><![CDATA[<a href="http://www.securehosting.com/" target="_blank">Secure Hosting</a> is a popular PCI:DSS compliant payment gateway provider in the UK.]]></description>
@@ -47,7 +47,7 @@
 			<!-- Advanced Secuitems Phrase -->
 			<param type="text" name="phrase" size="50" label="VMPAYMENT_SH_PHRASE" default="" description="VMPAYMENT_SH_PHRASE_DESC" />
 			<!-- Advanced Secuitems Referrer -->
-			<param type="text" name="referrer"  size="50" label="VMPAYMENT_SH_REFERER" default="http://www.mydomain/" description="VMPAYMENT_SH_REFERER_DESC" />
+			<param type="text" name="referrer"  size="50" label="VMPAYMENT_SH_REFERER" default="" description="VMPAYMENT_SH_REFERER_DESC" />
 			<!-- Test Mode -->
 			<param name="testmode" type="radio" default="0" label="VMPAYMENT_SH_TESTMODE" description="VMPAYMENT_SH_TESTMODE_DESC" >
 				<option value="0">COM_VIRTUEMART_NO</option>
@@ -96,7 +96,7 @@
 					<!-- Advanced Secuitems Phrase -->
 					<field type="text" name="phrase" size="50" label="VMPAYMENT_SH_PHRASE" default="" description="VMPAYMENT_SH_PHRASE_DESC" />
 					<!-- Advanced Secuitems Referrer -->
-					<field type="text" name="referrer"  size="50" label="VMPAYMENT_SH_REFERER" default="http://www.mydomain/" description="VMPAYMENT_SH_REFERER_DESC" />
+					<field type="text" name="referrer"  size="50" label="VMPAYMENT_SH_REFERER" default="" description="VMPAYMENT_SH_REFERER_DESC" />
 					<!-- Test Mode -->
 					<field name="testmode" type="radio" default="0" label="VMPAYMENT_SH_TESTMODE" description="VMPAYMENT_SH_TESTMODE_DESC" >
 						<option value="0">COM_VIRTUEMART_NO</option>

@@ -3,7 +3,7 @@
 /**
  *
  * SecureHosting Payment Module
- * @author: UPG Plc
+ * @author: Monek Ltd
  * @package VirtueMart
  * @subpackage payment
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
@@ -308,7 +308,7 @@ class plgVmPaymentSecureHosting extends vmPSPlugin {
 			$order = array();
 			$this->logInfo('process OK', 'message');
 			$order['order_status'] = 'U';
-			$order['comments'] = JText::sprintf('Customer completed checkout. Waiting for confirmation from UPG.', $order_number);
+			$order['comments'] = JText::sprintf('Customer completed checkout. Waiting for confirmation from Monek.', $order_number);
 			
 			$modelOrder = VmModel::getModel('orders');
 			$modelOrder->updateStatusForOneOrder($virtuemart_order_id, $order, true);			
@@ -375,7 +375,7 @@ class plgVmPaymentSecureHosting extends vmPSPlugin {
 			$order = array();
 			$this->logInfo('process OK', 'message');
 			$order['order_status'] = 'F';
-			$order['comments'] = JText::sprintf('Payment confirmed by UPG. Transaction complete.', $order_number);
+			$order['comments'] = JText::sprintf('Payment confirmed by Monek. Transaction complete.', $order_number);
 			
 			$modelOrder = VmModel::getModel('orders');
 			$modelOrder->updateStatusForOneOrder($virtuemart_order_id, $order, true);
